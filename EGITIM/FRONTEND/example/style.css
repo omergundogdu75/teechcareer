@@ -1,0 +1,86 @@
+/*
+Project name    : FORM REGISTER
+Project Author  : ÖMER GÜNDOĞDU
+Project date    : 12/10/2023
+Project Version : V1.0.0
+*/
+
+/* ********************************************* */
+/* Common property */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --template_bg_color: #000000;
+  --template_color: #fff;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Ubuntu", "sans-serif";
+  position: relative;
+  color: var(--template_color);
+  background-color: var(--template_bg_color);
+}
+
+a {
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ********************************************* */
+/* Form */
+
+/* heading*/
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+/* container_id */
+#container_id {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0.9rem;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* x düzleminde */
+  align-items: center; /* y düzleminde */
+  flex-wrap: nowrap; /* responsive olsun */
+
+  /* box-shadow:  */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 1);
+  box-shadow: 13px 24px 26px 4px rgba(255, 255, 255, 0.72);
+}
+
+/* icon_class */
+.icon_class {
+  color: rgb(125, 125, 251);
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+}
+
+/* input */
+/* input :focus */
+/* button */
+/* button:hover */
