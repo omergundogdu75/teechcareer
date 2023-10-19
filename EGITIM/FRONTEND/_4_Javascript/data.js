@@ -66,26 +66,25 @@
 //let data13 = Math.floor((Math.random()*data12+1).toFixed(2));
 //console.log(data13)
 
-
 //----------------------------
 let data14 = " js ÖğrEniyorum js";
 console.log(data14);
 console.log(data14.length);
-console.log(data14.trim.length)
-console.log(data14.startsWith(" "))
-console.log(data14.endsWith("s"))
-console.log(data14.toLowerCase())
-console.log(data14.toUpperCase())
+console.log(data14.trim.length);
+console.log(data14.startsWith(" "));
+console.log(data14.endsWith("s"));
+console.log(data14.toLowerCase());
+console.log(data14.toUpperCase());
 
 data14 = data14.concat(" -inc");
 console.log(data14);
 
 let data = " js ÖğrEniyorum js";
-data14 = data14.replace(data14,data);
+data14 = data14.replace(data14, data);
 console.log(data14);
 
 console.log(data14.charAt(1));
-console.log(data14.substring(0,4));
+console.log(data14.substring(0, 4));
 
 console.log(data14.indexOf("js"));
 console.log(data14.lastIndexOf("js"));
@@ -100,7 +99,7 @@ console.log(data14.lastIndexOf("js"));
 // S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
 // console.log(userData.replace("xxxxxxx"),"javascript");
 // console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
-// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith())
 // S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
 // S-8) ilk harf nedir  ? (charAt())
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
@@ -135,14 +134,13 @@ console.log(data14.lastIndexOf("js"));
 // 5-yuvarlama yapsın 6.0
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
-// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 //NOT: cast kullalım ?
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
 //eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
-
-// ÖDEV 
+// ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
 // eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
@@ -152,10 +150,52 @@ console.log(data14.lastIndexOf("js"));
 
 /////////////////////////////////////////////////////////////////////////////
 // Function
-// normal Function 
+//1
+function returnsuzParametresiz() {
+  console.log("Returnsüz ve parametresiz");
+}
+returnsuzParametresiz();
+//2
+function returnsuzParametreli(uname, username) {
+  console.log("Returnsüz ve parametreli" + uname + " " + username);
+}
+returnsuzParametreli("ÖMER", "GÜNDOĞDU");
+//3
+function returnluParametresiz() {
+  return "Selam returnlu parametresiz";
+}
+let data15 = returnluParametresiz();
+console.log(data15);
+//4
+function returnluParametreli(uname, username) {
+  return "Selam returnlu parametreli " + uname + " " + username;
+}
+let data16 = returnluParametreli("OMER", "GUNDOGDU");
+console.log(data16);
+
+// normal Function
+function normalFunction() {
+  console.log("Normaly funciton");
+}
+normalFunction();
+
 // anonymous function
+const anonymous = function () {
+  console.log("anonymous funciton");
+};
+anonymous();
+
 // arrow function
+const arrow = () => {
+  console.log("arrow funciton");
+};
+arrow();
+
 // immedia function (()=>{})()
+(()=>{
+    console.log("immedia function")
+})()
+
 /////////////////////////////////////////////////////////////////////////////
 
 // conditional
